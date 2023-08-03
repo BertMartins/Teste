@@ -55,22 +55,31 @@ button:hover {
   background-color: #076b7c;
 }
 
-.container {
+.coluna {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0%;
+  
 }
 
-.column {
+.div-imagem {
   flex: 1;
   padding: 3px;
 }
 
-.column img {
+.div-imagem img {
   width: 100%;
   max-width: 400px;
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+/* Para o Mobile*/
+
+@media only screen and (max-width: 600px){
+  .coluna{
+    flex-direction: column;
+  }
 }
